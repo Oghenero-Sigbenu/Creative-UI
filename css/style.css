@@ -107,7 +107,7 @@ html, body{
 }
 .up{
     height: 67%;
-    width: 100%;
+    /* width: 100%; */
 }
 .down{
     height: 30%;
@@ -178,6 +178,7 @@ justify-content: space-between;
 }
 .up-box{
     height: 40%;
+    
     margin-bottom: 50px;
 }
 .down-box{
@@ -240,7 +241,11 @@ justify-content: space-between;
     margin: 0 auto;
     text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    body{
+    overflow-x: hidden;
+
+    }
 .hamb div{
     width: 35px;
     height: 7px;
@@ -263,28 +268,39 @@ justify-content: space-between;
 }
 .text{
     text-align: left;
+    font-size: 20px;
+}
+ h1{
+    font-size: 40px !important;
 }
 .menu{
     display: none;
 }
 .image-gallery{
     height: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: aquamarine;
 }
 .left-box{
-    width:100%;
+    width:80%;
     height: 1000px;
+    /* margin: 0 auto; */
     justify-content: space-between;
+    justify-content: center;
 }
 .up-box{
-        height: 30%;
         margin-bottom: 0px;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 70px;
+        font-size: 20px;
     }
 .down-box{
         width:80%;
-        height: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0 auto;
     }
 .car{
@@ -301,8 +317,6 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
     /* width: 100%; */
 }
  .main-banner-image img{
@@ -310,9 +324,6 @@ justify-content: space-between;
     width: 100%;
     height: 100%;
 }
-/* .menu{
-    margin-right: 150px;
-} */
 .text h1{
     font-size: 80px;
 } 
@@ -321,12 +332,10 @@ justify-content: space-between;
     flex-direction: column;
     justify-content: space-between;
     height: 650px;
-    /* margin-top: 40px; */
     width: 100%;
 }
 .main-banner-text{
     text-align: left;
-    /* margin-top: 90px; */
     width: 70%;
     height:50%;
     margin: 40px auto;
@@ -359,19 +368,13 @@ justify-content: space-between;
 .footer{
     color: gray;
     width: 80%;
-    height: 250px; 
+    /* height: 250px;  */
     flex-wrap: wrap;
     justify-content: space-between;
-
-    /* margin:100px auto;  */
+    margin-top: 200px;
 }
  .footer-menu{
-    /* width: 50%; */
     display: flex;
-    /* flex-direction: column; */
-}
-.footer-logo{
-    /* width: 50%; */
 }
 .subcribe{
     /* width: 80%; */
@@ -395,7 +398,7 @@ justify-content: space-between;
     text-align: center;
 }
 }
-@media only screen and (min-width: 610px) and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
  .first-div{
     height: 900px;
     /* display: flex; */
@@ -501,9 +504,7 @@ justify-content: space-between;
     /* width: 55%; */
     display: flex;
 }
-.footer-logo{
-    /* width: 35%; */
-}
+
 .subcribe{
     /* width: 70%; */
     height: 30%;
