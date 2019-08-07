@@ -1,15 +1,15 @@
     
-var menu = document.getElementById("hamb-menu");
-var details = document.getElementById("left-menu");
+let bar = document.querySelector(".menu");
+let details = document.querySelector(".hamb");
 
 //on clocking on hamb-menu it should change it class 
-menu.addEventListener("click", () => {
-    menu.classList.toggle("change")
+details.addEventListener("click", () => {
     console.log("love")
-    if(details.style.display === 'block'){
-        details.style.display = 'none';
+    details.classList.toggle("change")
+    if(bar.style.display === 'block'){
+        bar.style.display = 'none';
     }else{
-        details.style.display = 'block';
+        bar.style.display = 'block';
     };
 
 } )
